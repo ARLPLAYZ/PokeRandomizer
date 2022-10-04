@@ -45,6 +45,7 @@ client.on('messageCreate', async (msg) => {
     'r!',
     'R!',
 
+    
   ];
   const prefix = prefixes.filter(p => msg.content.startsWith(p))[0];
   if (!prefix) return;
