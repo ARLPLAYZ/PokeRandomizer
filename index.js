@@ -2,7 +2,7 @@ const { Client, Intents, Message, MessageEmbed, Collection } = require('discord.
 const client = new Client({ partials: ["CHANNEL"], intents: [Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES] });
 const Pokedex = require('pokedex-promise-v2');
 const P = new Pokedex();
-
+require('dotenv').config();
 client.commands = new Collection();
 client.on('debug', i => console.warn(i));
 client.on('ready', () => {
